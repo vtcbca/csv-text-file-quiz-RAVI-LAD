@@ -1,0 +1,27 @@
+import csv
+f=open('Salary.csv','w')
+print(f)
+w=csv.writer(f)
+header=["s_id","s_name","salary"]
+w.writerow(header)
+row=[[1,"Ravi",5000],[2,"Om",4000],[3,"Ram",7000],[4,"Shiv",8000],[5,"Sai",4200]]
+w.writerows(row)
+
+with open('Salary.csv','r') as f:
+    r=csv.reader(f)
+    for row in r:
+        print(row)
+
+OUTPUT:
+	['s_id', 's_name', 'salary']
+	[]
+	['1', 'Ravi', '5000']
+	[]
+	['2', 'Om', '4000']
+	[]
+	['3', 'Ram', '7000']
+	[]
+	['4', 'Shiv', '8000']
+	[]
+	['5', 'Sai', '4200']
+	[]
