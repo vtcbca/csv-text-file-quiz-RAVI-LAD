@@ -1,3 +1,6 @@
+Create salary.csv file which contain sid,sname,salary.
+   Display the employee record whose name begins from "S‟ also show no. of employee with first letter "S‟ out of total record.
+
 import csv
 f=open('Salary.csv','w')
 print(f)
